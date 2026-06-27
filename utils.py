@@ -3,6 +3,10 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
+nltk.download("punkt")
+nltk.download("punkt_tab")
+nltk.download("stopwords")
+
 # removing url
 def remove_url(text):
     text = re.sub(r"https?://\S+","",text)
